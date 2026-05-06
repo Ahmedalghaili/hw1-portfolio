@@ -1,6 +1,9 @@
-import { Github, Linkedin, Mail, Phone } from "lucide-react"
+import { Github, Linkedin, Mail, MessageCircle, Phone } from "lucide-react"
 
 export function Footer() {
+  const whatsappNumber = "6282134908249"
+  const year = new Date().getFullYear()
+
   return (
     <footer id="contact" className="bg-black text-white py-12 md:py-16">
       <div className="container mx-auto px-4">
@@ -33,71 +36,90 @@ export function Footer() {
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
+                <a
+                  href={`https://wa.me/${whatsappNumber}`}
+                  aria-label="WhatsApp"
+                  className="w-10 h-10 bg-[#2F81F7] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                </a>
               </div>
             </div>
 
             <div>
-              <h3 className="font-bold mb-4">Pages</h3>
+              <h3 className="font-bold mb-4">Sections</h3>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="#home" className="hover:text-white transition-colors">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="#services" className="hover:text-white transition-colors">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#about" className="hover:text-white transition-colors">
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="#portfolio" className="hover:text-white transition-colors">
                     Portfolio
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Single Project
+                  <a href="#experience" className="hover:text-white transition-colors">
+                    Experience
+                  </a>
+                </li>
+                <li>
+                  <a href="#research" className="hover:text-white transition-colors">
+                    Research
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" className="hover:text-white transition-colors">
+                    Contact
                   </a>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-bold mb-4">Utility Pages</h3>
+              <h3 className="font-bold mb-4">Links</h3>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Style Guide
+                  <a
+                    href="https://github.com/Ahmedalghaili"
+                    className="hover:text-white transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Start Here
+                  <a
+                    href="https://www.linkedin.com/in/ahmed-alghaili"
+                    className="hover:text-white transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    404 Not Found
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Password protected
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Licenses
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Changelog
+                  <a
+                    href={`https://wa.me/${whatsappNumber}`}
+                    className="hover:text-white transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    WhatsApp
                   </a>
                 </li>
               </ul>
@@ -118,12 +140,23 @@ export function Footer() {
                     +62 821-3490-8249
                   </a>
                 </li>
+                <li className="flex items-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  <a
+                    href={`https://wa.me/${whatsappNumber}`}
+                    className="hover:text-white transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    WhatsApp: +62 821-3490-8249
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-            <p>© 2025 Ahmed Alghaili - AI Engineer & Researcher</p>
+            <p>© {year} Ahmed Alghaili - AI Engineer & Researcher</p>
           </div>
         </div>
       </div>
