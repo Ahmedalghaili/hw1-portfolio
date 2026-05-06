@@ -1,5 +1,3 @@
-import { ArrowRight } from "lucide-react"
-
 export function PortfolioSection() {
   const projects = [
     {
@@ -96,13 +94,6 @@ export function PortfolioSection() {
                 <p className="text-sm md:text-base text-[#393939] leading-relaxed md:leading-[26px] font-medium">
                   {project.description}
                 </p>
-
-                <div className="mt-6 pt-6 border-t border-black/10">
-                  <div className="flex items-center text-[#2F81F7] font-semibold text-sm group-hover:translate-x-1 transition-transform">
-                    Learn more
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </div>
-                </div>
               </div>
             ))}
           </div>

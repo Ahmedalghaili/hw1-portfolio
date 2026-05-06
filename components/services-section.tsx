@@ -29,6 +29,11 @@ export function ServicesSection() {
       description: "Develop efficient data pipelines, experiment tracking, and model lifecycle management using modern MLOps tools.",
       image: "/images/motion-graphics.svg",
     },
+    {
+      title: "Full-stack Websites & Applications",
+      description: "Build responsive, production-ready websites and full-stack applications—from UI to backend APIs and deployment.",
+      image: "/images/studio-workspace.svg",
+    },
   ]
 
   return (
