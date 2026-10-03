@@ -1,49 +1,37 @@
-# Cooked this Paperfolio template with V0 | Here’s the template you can use for free
+# Ahmed Alghaili — Coursework Portfolio (HW#1)
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://v0.link/nikhil-shukla)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.link/paperfolio)
+Personal portfolio website built with generative AI as a collaborator, for HW#1 *Build Your CourseWork Website with Generative AI*.
 
-![Paperfolio Template Preview](https://global.discourse-cdn.com/vercel/original/2X/e/e8a5d554ecf92e4adb4a718138c60ad7e0c7510e.png)
+- **Live site:** https://alghailiahemd.netlify.app
+- **Student:** Ahmed Alghaili (艾哈邁德·阿爾蓋利) · Student ID m1561025
 
-I’ve been experimenting with **V0 - by Vercel**, and I rebuilt the popular **Paperfolio** layout originally created by **Brix Templates**.
-This is a community-made clone — all ownership of the original design stays with @brixtemplatesbrixtemplates.
-My goal was simply to recreate it in V0 so anyone can use or remix it.
+## Sections
 
----
+| Requirement | Where |
+| --- | --- |
+| About (name EN & CN, Student ID) | `components/about-section.tsx` — values in `lib/student-info.ts` |
+| Education / Experience | `components/education-section.tsx`, `components/experience-section.tsx` |
+| Research / Projects | `components/research-section.tsx`, `components/portfolio-section.tsx` |
+| Contact / Links | `components/footer.tsx` (`#contact`) |
 
-## Live Demo & Template Access
+Visual elements: portrait photo, service illustrations, animated skills marquee. Layout is responsive from phone to desktop.
 
-**→  Template (Clone / Remix):** https://v0.link/paperfolio
+## Tech stack
 
-**→  Live Preview:** https://v0-paperfolio.vercel.app
+Next.js 15 (App Router) · React 19 · TypeScript · Tailwind CSS 4 · lucide-react icons.
 
----
+## Run locally
 
-## Video Walkthrough
+```bash
+pnpm install
+pnpm dev        # http://localhost:3000
+pnpm build      # production build
+```
 
-**→ Watch the walkthrough on X:**
-[https://x.com/i/status/1994130537464910310](https://x.com/i/status/1994130537464910310)
+## Deployment
 
----
+Configured for Netlify (`netlify.toml`); it also deploys to Vercel with zero config.
 
-## What’s Inside the Template
+## Credits
 
-* Clean portfolio with hero section and highlight-style text blocks
-* Minimal, bold layout focused on showcasing your work
-* Reusable components built directly in V0
-* Easy to customize for personal portfolios or client sites
-
----
-
-## How to Use It
-
-1. Open the template → https://v0.link/paperfolio
-2. Click on “Open in V0”
-3. Make your styling tweaks
-4. Deploy on Vercel
-
-That’s it — you have a clean, modern portfolio site ready to ship.
-
----
-
-If you end up customizing this, I’d like to see what you build.
+The starting layout is a community v0 recreation of the **Paperfolio** template by BRIX Templates. Content, sections, and structure were then adapted with AI assistance and manual edits. See `submission/AI_Interaction_Log.md`.

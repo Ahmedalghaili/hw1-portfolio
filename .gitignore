@@ -11,3 +11,5 @@ node_modules
 
 # Local image exports
 ChatGPT Image*.png
+# TypeScript incremental build info
+tsconfig.tsbuildinfo

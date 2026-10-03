@@ -1,21 +1,23 @@
 import { Github, Linkedin, Mail, MessageCircle, Phone } from "lucide-react"
+import { studentInfo } from "@/lib/student-info"
 
 export function Footer() {
   const whatsappNumber = "6282134908249"
   const year = new Date().getFullYear()
 
   return (
-    <footer id="contact" className="bg-black text-white py-12 md:py-16">
+    <footer className="bg-black text-white py-12 md:py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-lg md:text-xl font-bold">Ahmed Alghaili</span>
+                <span lang="zh" className="text-lg md:text-xl font-bold text-gray-400">{studentInfo.nameCn}</span>
               </div>
               <p className="text-gray-400 mb-6 text-sm leading-relaxed">
                 AI Engineer & Researcher<br />
-                Yogyakarta, Indonesia
+                {studentInfo.location}
               </p>
               <div className="flex gap-3">
                 <a
@@ -64,6 +66,11 @@ export function Footer() {
                 <li>
                   <a href="#about" className="hover:text-white transition-colors">
                     About
+                  </a>
+                </li>
+                <li>
+                  <a href="#education" className="hover:text-white transition-colors">
+                    Education
                   </a>
                 </li>
                 <li>
