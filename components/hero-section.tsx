@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react"
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { asset } from "@/lib/asset"
 
 const delay = (ms: number) => ({ "--enter-delay": `${ms}ms` }) as CSSProperties
 
@@ -95,7 +96,7 @@ export function HeroSection() {
               style={delay(120)}
             >
               <img
-                src="/images/portrait.jpg"
+                src={asset("/images/portrait.jpg")}
                 alt="Portrait of Ahmed Alghaili"
                 width={955}
                 height={992}

@@ -2,6 +2,7 @@ import type { CSSProperties } from "react"
 import { BookOpen, Briefcase, GraduationCap, MapPin, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { studentInfo } from "@/lib/student-info"
+import { asset } from "@/lib/asset"
 
 const highlights = [
   {
@@ -38,7 +39,7 @@ export function AboutSection() {
               <div className="p-6 grid grid-cols-[96px_1fr] sm:grid-cols-[120px_1fr] gap-5 items-center border-b-[3px] border-black">
                 <div className="aspect-square rounded-2xl border-[3px] border-black overflow-hidden bg-[#FDB927]">
                   <img
-                    src="/images/portrait.jpg"
+                    src={asset("/images/portrait.jpg")}
                     alt="Portrait of Ahmed Alghaili"
                     width={240}
                     height={240}

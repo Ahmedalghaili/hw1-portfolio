@@ -1,7 +1,7 @@
 # AI Interaction Log — HW#1
 
 **Student:** Ahmed Alghaili (艾哈邁德·阿爾蓋利) · m1561025
-**Live site:** https://alghailiahemd.netlify.app
+**Live site:** https://ahmedalghaili.github.io/hw1-portfolio/
 **Tools used:** v0 by Vercel (starting template), Claude Code with Claude Opus 5.5 (audit, redesign, content updates), Emil Kowalski's design-engineering skill for Claude Code
 
 **Starting point.** The site began as a community v0 recreation of the *Paperfolio* template. Before this homework I had already replaced the template text with my own projects, experience, and contact links (repository history, May 2026). The interactions below cover the HW#1 work: checking the site against the rubric, redesigning it, and correcting the content.

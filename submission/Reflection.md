@@ -4,7 +4,7 @@
 
 ## Process
 
-I did not start from a blank page. My site began as a v0-generated recreation of the Paperfolio template, which I had already filled with my own projects and experience. For this homework I used Claude Code as a collaborator in the repository itself. First I pasted the HW#1 rubric and asked it to audit the site. Then I asked for a design upgrade guided by a design-engineering skill. After that I went through several rounds of corrections. I deployed through Netlify, connected to my GitHub repository.
+I did not start from a blank page. My site began as a v0-generated recreation of the Paperfolio template, which I had already filled with my own projects and experience. For this homework I used Claude Code as a collaborator in the repository itself. First I pasted the HW#1 rubric and asked it to audit the site. Then I asked for a design upgrade guided by a design-engineering skill. After that I went through several rounds of corrections. I published it with GitHub Pages, so it rebuilds automatically every time I push to GitHub.
 
 ## Human edits and judgment
 

@@ -6,6 +6,7 @@ import "./globals.css"
 import { Onest } from "next/font/google"
 import { Footer } from "@/components/footer"
 import { RevealObserver } from "@/components/reveal-observer"
+import { asset } from "@/lib/asset"
 
 // Initialize Onest font with weights 500 and 700
 const onest = Onest({
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ahmed Alghaili — AI Engineer & Researcher",
     description: "LLM systems, RAG chatbots, and computer vision research.",
-    images: ["/images/portrait.jpg"],
+    images: [asset("/images/portrait.jpg")],
   },
 }
 

@@ -2,7 +2,7 @@
 
 Personal portfolio website built with generative AI as a collaborator, for HW#1 *Build Your CourseWork Website with Generative AI*.
 
-- **Live site:** https://alghailiahemd.netlify.app
+- **Live site:** https://ahmedalghaili.github.io/hw1-portfolio/
 - **Student:** Ahmed Alghaili (艾哈邁德·阿爾蓋利) · Student ID m1561025
 
 ## Sections
@@ -30,7 +30,15 @@ pnpm build      # production build
 
 ## Deployment
 
-Configured for Netlify (`netlify.toml`); it also deploys to Vercel with zero config.
+Hosted on **GitHub Pages** as a static export (`output: "export"` in `next.config.mjs`).
+Every push to `main` runs `.github/workflows/deploy-pages.yml`, which builds with
+`NEXT_PUBLIC_BASE_PATH=/<repo-name>` and publishes the `out/` folder.
+
+Build the static site locally:
+
+```bash
+NEXT_PUBLIC_BASE_PATH=/hw1-portfolio pnpm build   # output in out/
+```
 
 ## Credits
 

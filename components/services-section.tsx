@@ -2,38 +2,39 @@ import type { CSSProperties } from "react"
 import { ArrowRight, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { asset } from "@/lib/asset"
 
 export function ServicesSection() {
   const services = [
     {
       title: "LLM & Chatbot Development",
       description: "Design and deploy advanced conversational AI systems using RAG pipelines, LangChain, and OpenAI APIs with high accuracy and reduced hallucination.",
-      image: "/images/web-design.svg",
+      image: asset("/images/web-design.svg"),
     },
     {
       title: "Computer Vision Solutions",
       description: "Build deep learning models for object detection and medical imaging using YOLO, Vision Transformers, and CNN architectures.",
-      image: "/images/ui-ux-design.svg",
+      image: asset("/images/ui-ux-design.svg"),
     },
     {
       title: "AI Model Development",
       description: "Train and fine-tune machine learning models using PyTorch and TensorFlow with optimized pipelines and performance evaluation.",
-      image: "/images/product-design.svg",
+      image: asset("/images/product-design.svg"),
     },
     {
       title: "AI API & Backend Integration",
       description: "Deploy scalable AI systems using FastAPI and REST APIs, ensuring seamless integration into real-world applications.",
-      image: "/images/user-research.svg",
+      image: asset("/images/user-research.svg"),
     },
     {
       title: "Data Processing & MLOps",
       description: "Develop efficient data pipelines, experiment tracking, and model lifecycle management using modern MLOps tools.",
-      image: "/images/motion-graphics.svg",
+      image: asset("/images/motion-graphics.svg"),
     },
     {
       title: "Full-stack Websites & Applications",
       description: "Build responsive, production-ready websites and full-stack applications—from UI to backend APIs and deployment.",
-      image: "/images/studio-workspace.svg",
+      image: asset("/images/studio-workspace.svg"),
     },
   ]
 
@@ -83,7 +84,7 @@ export function ServicesSection() {
               data-reveal
               className="sm:col-span-2 lg:col-span-3 bg-[#FFC224] border-[3px] border-black rounded-[28px] p-8 md:p-10 flex flex-col md:flex-row items-center gap-6 md:gap-10 text-center md:text-left shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
             >
-              <Image src="/images/get-in-touch.svg" alt="" width={92} height={92} className="w-[76px] h-[76px] md:w-[92px] md:h-[92px] flex-shrink-0" />
+              <Image src={asset("/images/get-in-touch.svg")} alt="" width={92} height={92} className="w-[76px] h-[76px] md:w-[92px] md:h-[92px] flex-shrink-0" />
               <div className="flex-1">
                 <h3 className="text-[26px] md:text-[32px] leading-tight font-bold mb-2 text-[#0B0B0B]">Have an AI problem worth solving?</h3>
                 <p className="text-[16px] md:text-[18px] leading-relaxed font-medium text-[#393939]">
